@@ -1,0 +1,502 @@
+.counter {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  margin-bottom: 24px;
+
+  &:hover {
+    border-color: var(--accent-border);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+.hero {
+  position: relative;
+
+  .base,
+  .framework,
+  .vite {
+    inset-inline: 0;
+    margin: 0 auto;
+  }
+
+  .base {
+    width: 170px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .framework,
+  .vite {
+    position: absolute;
+  }
+
+  .framework {
+    z-index: 1;
+    top: 34px;
+    height: 28px;
+    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
+      scale(1.4);
+  }
+
+  .vite {
+    z-index: 0;
+    top: 107px;
+    height: 26px;
+    width: auto;
+    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
+      scale(0.8);
+  }
+}
+
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  place-content: center;
+  place-items: center;
+  flex-grow: 1;
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;
+    gap: 18px;
+  }
+}
+
+#next-steps {
+  display: flex;
+  border-top: 1px solid var(--border);
+  text-align: left;
+
+  & > div {
+    flex: 1 1 0;
+    padding: 32px;
+    @media (max-width: 1024px) {
+      padding: 24px 20px;
+    }
+  }
+
+  .icon {
+    margin-bottom: 16px;
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+#docs {
+  border-right: 1px solid var(--border);
+
+  @media (max-width: 1024px) {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+#next-steps ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  margin: 32px 0 0;
+
+  .logo {
+    height: 18px;
+  }
+
+  a {
+    color: var(--text-h);
+    font-size: 16px;
+    border-radius: 6px;
+    background: var(--social-bg);
+    display: flex;
+    padding: 6px 12px;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: var(--shadow);
+    }
+    .button-icon {
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      flex: 1 1 calc(50% - 8px);
+    }
+
+    a {
+      width: 100%;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+  }
+}
+
+#spacer {
+  height: 88px;
+  border-top: 1px solid var(--border);
+  @media (max-width: 1024px) {
+    height: 48px;
+  }
+}
+
+.ticks {
+  position: relative;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -4.5px;
+    border: 5px solid transparent;
+  }
+
+  &::before {
+    left: 0;
+    border-left-color: var(--border);
+  }
+  &::after {
+    right: 0;
+    border-right-color: var(--border);
+  }
+}
+
+.login-page {
+  background: url('./assets/img/banner/Banner1.jpg') no-repeat center center/cover;
+  height: 600px;
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent white */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  width: 350px;
+}
+.transparent-btn{
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent white */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  opacity: 0.75;
+}
+
+.me-8 {
+  margin-right: 8rem !important;
+}
+
+.navbar {
+  padding: 1rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.nav-link {
+  color: #1a1a1a;
+  font-weight: 500;
+  margin-right: 1.5rem;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.destination-page {
+  background: url('./assets/img/destination/banner5.jpg') no-repeat center center/cover;
+  width: 100% !important;
+  height: 400px !important;
+}
+
+.background-img1{
+  background: url('./assets/img/taxi-1.avif') no-repeat center center/cover;
+  width: 100% !important;
+  height: 400px;
+}
+
+.background-img2{
+  background: url('./assets/img/taxi-2.avif') no-repeat center center/cover;
+  width: 100% !important;
+  height: 550px;
+}
+
+.center-btn-container {
+  /* display: flex; */
+  flex-direction: column;   /* vertical */
+  justify-content: center;  /* vertical center */
+  align-items: center;      /* horizontal center */
+  height:50vh;            /* full screen height */
+}
+
+.center-btn-container button {
+  margin: 10px 0;           /* spacing between buttons */
+}
+
+.two-line-paragraph {
+  display: -webkit-box;        /* Flex box for text */
+  /* --webkit-line-clamp: 2;       Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;            
+  text-overflow: ellipsis;     /* Add ... at the end */
+}
+.bg-5{
+  background: #8e9eab;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.bg-6{
+  background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-7{
+  background: #000C40;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #607D8B, #000C40);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #607D8B, #000C40); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.bg-8{
+  background: #536976;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #373f6f, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.bg-9{
+  background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #141E30, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #141E30, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.icon-custom {
+  font-size: 28px;       /* icon size */
+  color: #1b2128;        /* blue color */
+  display: inline-block; /* allow width/height control */
+  margin-bottom: 10px;   /* spacing below icon */
+}
+.bg-custom{
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  background: #331f2c;
+
+  color: #fbe9e9;
+}
+.bg-custom-2{
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  background: #4d193b;
+
+  color: #fbe9e9;
+}
+
+@media (max-width: 768px) {
+  .login-page {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .login-page {
+    margin: 40px auto;
+    padding: 30px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.border-1{
+  border: none;
+}
+.border-r{
+  border-radius: 50% !important;
+}
+
+.mx-6 {
+  margin-right: 8rem !important;
+  margin-left: 8rem !important;
+}
+.icon-small {
+  font-size: 12px; /* smaller pixel size */
+}
+.w-40 {
+  width: 40% !important;
+}
+.px-4-5 {
+  padding-right: 2.5rem !important;
+  padding-left: 2.5rem !important;
+}
+
+.txt-w{color: white !important;}
+.mt-6{margin-top: 6rem;}
+.sline {
+    width: 58px;
+    height: 4px;
+    color: #1a1a1a;
+    border-radius: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    margin: 0 auto 12px;
+}
+
+.date-time-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.date-time-group label {
+  font-weight: 600;
+  margin-bottom: 20%;
+  color: #555;
+}
+.date-time-group input {
+  width: 50%;
+}
+
+.bottom-content{
+  position: absolute;
+  height: 500px;
+  right: 20%;
+}
+
+.plan-card {
+  position: relative;
+  height: 380px;
+  width: 50%;
+  border-radius: 20px;
+  overflow: hidden;
+
+  /* Full Background Image */
+  background-image: url("./assets/img/taxi-1.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.plan-card-w {
+  position: relative;
+  height: 380px;
+  width: 50%;
+  border-radius: 20px;
+  overflow: hidden;
+
+  /* Full Background Image */
+  background-image: url("./assets/img/taxi-2.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Right Side Form */
+.form-section {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+
+  width: 250px;
+  padding: 5px;
+
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(1px);
+
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.form-section-1 {
+  position: absolute;
+  top: 50%;
+  right: 400px;
+  transform: translateY(-50%);
+
+  width: 250px;
+  padding: 5px;
+
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(4px);
+
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+
+.form-control {
+  height: 40px;
+}
+
+/* underline text */
+.underline {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #ff0000, #ff9900);
+  border-radius: 2px;
+  
+}
+.text{color: #008080;}
+.text-underline1{
+   width: 110px;
+  height: 4px;
+  background: linear-gradient(to right, #00C9A7, #00B4D8,#90E0EF);
+  border-radius: 2px;
+  margin-right: 40px;
+}
+.text-2{color: #2d0b32;}
+.text-underline2{
+   width: 110px;
+  height: 4px;
+  background: linear-gradient(to right, #8E2DE2, #4A00E0,#90E0EF);
+  border-radius: 2px;
+  margin-right: 40px;
+
+}
+
+
+/* text design */
+.top-line {
+  color: #FFA500; /* Warm orange */
+  font-family: 'Poppins', cursive;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #1A1A1A; /* Deep charcoal black */
+}
+
+.highlight {
+  color: #FFB300; /* Taxi yellow accent */
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #FF3B3B, #FFA500);
+  border-radius: 2px;
+  margin: 10px auto;
+}
+
+.subtext {
+  color: #6E6E6E;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
