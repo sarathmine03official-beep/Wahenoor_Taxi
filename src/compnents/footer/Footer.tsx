@@ -1,4 +1,4 @@
-import logo5 from '../../assets/img/logo/logo5.png'
+import logo5 from '../../assets/img/logo/logo7.png'
 
 function Footer(){
     return(
@@ -56,7 +56,7 @@ function Footer(){
                     </div>
                 </form>
                 <div className='d-flex justify-content-md-center'>
-                <img className=' w-25' src={logo5} alt="logo"/></div>
+                <img className=' w-35' src={logo5} alt="logo"/></div>
             </div>
         </div>
 

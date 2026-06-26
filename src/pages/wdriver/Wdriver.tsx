@@ -1,12 +1,27 @@
 import Header from "../../compnents/header/Header"
 import video1 from "../../assets/img/drive_without_car/booking/usingvideo1.mp4"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Footer from "../../compnents/footer/Footer";
 
 function Wdriver(){
     const [date ,setDate] =useState('');
     const [time,setTime] =useState('');
+
+          useEffect(() => {
+        const today = new Date();
+        const tomorrow = new Date(today);
+        tomorrow.setDate(today.getDate() + 1);
+        setDate(tomorrow.toISOString().split('T')[0]); // format: YYYY-MM-DD
+    
+    
+            const defaultTime = new Date();
+        defaultTime.setHours(9);
+        defaultTime.setMinutes(0);
+        const formattedTime = defaultTime.toTimeString().slice(0, 5); // HH:MM
+        setTime(formattedTime);
+      }, []);
+    
     return(
         <>
         <Header/>
@@ -15,7 +30,7 @@ function Wdriver(){
 
     {/* Booking Form */}
     <div className="col-lg-6">
-      <div className="card shadow-lg border-0 p-4 rounded-4">
+      <div className="card shadow-sm border-2 p-4 rounded-4">
         <h1 className="fw-bold mb-3">Request a Ride</h1>
 
         <p className="text-muted">
@@ -54,24 +69,59 @@ function Wdriver(){
         autoPlay
         loop
         muted
-        className="w-100 rounded-4 shadow border-5"
+        className="w-100 rounded-4  border-5"
       />
     </div>
 
   </div>
 </div>
 
-<div className="container py-5">
-  <div className="row g-4">
-
-    {/* Reserve Card */}
-    <div className="col-lg-6  ">
-
-      <h2 className="text-align">Get your ride right with Uber Reserve</h2>
+{/* <div className="container">
+<h2 className="">Get your ride right with Uber Reserve</h2>
         <div className="d-flex justify-content-md-center ">
         <i className="bi bi-arrow-right-circle "></i>
         <p className="ms-2">Book Your Ride</p>
-        </div>
+        </div></div> */}
+
+        <div className="reserve-banner">
+
+  {/* <div className="top-line"></div> */}
+
+  <div className="content">
+    <span className="star">✦</span>
+
+    <p>
+      Get your ride right with
+      <span className="highlight ms-2"> Wahenoor Reserve</span>
+    </p>
+
+    <span className="star">✦</span>
+  </div>
+
+  <div className="bottom-section">
+    <div className="small-line"></div>
+
+    <button className="ride-btn">
+      → BOOK YOUR RIDE
+    </button>
+
+    <div className="small-line"></div>
+  </div>
+  <div className="d-md-flex justify-content-md-center">
+  <div className="bottom-line "></div></div>
+
+</div>
+
+
+<div className="container py-5 ">
+  <div className="row g-4 ">
+    
+
+    {/* Reserve Card */}
+    <div className="col-lg-6   border-radius " >
+
+      
+
         <h3 className="d-flex justify-content-md-start ">Benefits</h3>
         <div className="d-flex ">
         <img alt="" src="https://tb-static.uber.com/prod/udam-assets/e12eddee-f082-49f7-a5fc-22c17977de50.svg" className="css-hmxZjQ w-2 ms-2 mt-3"></img>
@@ -85,7 +135,11 @@ function Wdriver(){
         <img alt="" src="https://tb-static.uber.com/prod/udam-assets/45ebda59-6a0d-41e3-a924-0dbbce078029.svg" className="css-hmxZjQ w-2 ms-2 "></img>
         <p className=" ps-2 text-align">Cancel at no charge up to 60 minutes in advance.</p>
        </div>
-
+       <p className="ps-2  text-align"><i className="fa-solid fa-clock pe-4"></i>Drivers wait patiently to match your arrival time — no rush, no stress.</p>
+       <p className="ps-2  text-align"><i className="fa-solid fa-ban pe-4"></i>Cancel up to 60 minutes before pickup without any charge.</p>
+       <div className="d-flex"><i className="fa-solid fa-shield-halved ps-2 pt-1 "></i>
+       <p className="ps-3 text-align">Verified drivers and insured vehicles ensure your peace of mind on every ride.</p>
+</div>
 
 </div>
 

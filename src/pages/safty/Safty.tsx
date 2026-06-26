@@ -83,9 +83,9 @@ Impact Protection Barriers: Built-in side-impact beams and front crumple zones p
             <div className="Scene1 list-sentence ">
                 <ul className=" ms-3-5 fw-semibold fs-5 text-align  text-overlay ">
                   
-                <li >Driver Background Check → Criminal record, license validity, and driving experience are checked.</li>
-                <li >Live Tracking → Real‑time location tracking during the ride for passenger safety.</li>
-                <li >Emergency Button → SOS button for immediate help (police or family contact).</li>
+                <li className="py-2">Driver Background Check → Criminal record, license validity, and driving experience are checked.</li>
+                <li className="py-2">Live Tracking → Real‑time location tracking during the ride for passenger safety.</li>
+                <li className="py-2">Emergency Button → SOS button for immediate help (police or family contact).</li>
                 
                 </ul>
                 
@@ -93,23 +93,23 @@ Impact Protection Barriers: Built-in side-impact beams and front crumple zones p
             </div>
             <div className="Scene2 list-sentence">
                 <ul className=" ms-3-5 fw-semibold fs-5 text-align text-overlay">
-                <li >User Verification → Passengers and drivers must verify their identity (ID proof, phone verification).</li>
-                <li >Night Ride Safety → Only verified drivers are active at night; route monitoring enabled.</li>
-                <li >Data Privacy → Passenger location and contact details are stored securely, not shared with third parties.</li>
+                <li className="py-2">User Verification → Passengers and drivers must verify their identity (ID proof, phone verification).</li>
+                <li className="py-2">Night Ride Safety → Only verified drivers are active at night; route monitoring enabled.</li>
+                <li className="py-2">Data Privacy → Passenger location and contact details are stored securely, not shared with third parties.</li>
                 </ul>
             </div>
             <div className="Scene3 list-sentence">
                 <ul className="ms-3-5 fw-semibold fs-5 text-align text-overlay">
-                <li >AI Car Assignment Safety → When a car is assigned automatically, the system ensures the vehicle is inspected and safe.</li>
-                <li >Autonomous Vehicle Monitoring → Future driverless cars will have continuous monitoring with GPS, cameras, and sensors.</li>
-                <li >Insurance Protection → Coverage for both passengers and AI‑assigned vehicles in case of accidents.</li>
+                <li className="py-2">AI Car Assignment Safety → When a car is assigned automatically, the system ensures the vehicle is inspected and safe.</li>
+                <li className="py-2">Autonomous Vehicle Monitoring → Future driverless cars will have continuous monitoring with GPS, cameras, and sensors.</li>
+                <li className="py-2">Insurance Protection → Coverage for both passengers and AI‑assigned vehicles in case of accidents.</li>
                 </ul>
             </div>
              <div className="Scene4 list-sentence mb-5">
-                <ul className=" ms-3-5 fw-semibold fs-5 text-align text-overlay">
-                <li >Emergency Override → Passengers can stop or redirect the ride using an SOS or override button.</li>
-                <li >Night Ride Restrictions → Autonomous or AI‑assigned cars operate only on verified routes at night.</li>
-                <li >Ride Transparency → Passengers see which car is assigned, its route, and estimated arrival before boarding.</li>
+                <ul className=" ms-3-5 fw-semibold fs-5 text-align text-overlay ">
+                <li className="py-2">Emergency Override → Passengers can stop or redirect the ride using an SOS or override button.</li>
+                <li className="py-2">Night Ride Restrictions → Autonomous or AI‑assigned cars operate only on verified routes at night.</li>
+                <li className="py-2">Ride Transparency → Passengers see which car is assigned, its route, and estimated arrival before boarding.</li>
                 </ul>
             </div>
             

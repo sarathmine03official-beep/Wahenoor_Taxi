@@ -1,11 +1,21 @@
+import Model from "../model/Model"
+
 function Featuresafety(){
     return(
         <>
-        <h3 className="mt-4 text">Safe ! Smart ! Travel !</h3>
-        <div className="d-flex justify-content-md-center"><div className="text-underline1 "></div> </div>
+        <div className="ride-card">
+  <h2 className="ride-title">
+    Safe ! <span>Smart !</span> Travel ! »
+  </h2>
+
+  <p className="ride-desc">
+    Reliable service. Every mile of the way.
+  </p>
+</div>
+
 
         <section className="container">
-        <div className="container-fluid row g-5 py-5 row-cols-1 row-cols-lg-3">
+        <div className="container-fluid row g-5 py-3 pb-5 row-cols-1 row-cols-lg-3">
     <div className="feature col">
         <div
             className="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
@@ -13,13 +23,14 @@ function Featuresafety(){
             <i className="fa-solid fa-gift"></i>
         </div>
         <h3 className="fs-2 text-body-emphasis">Rewards & Offers</h3>
-        <p className="text-left">
+        <p className="text-left ">
             Enjoy exclusive discounts and cashback on every ride. Earn points for frequent travel and redeem them easily. Your loyalty always brings extra savings.
         </p>
+        <div className="pt-4">
         <a href="#" className="icon-link">
             Discover Offers
             <svg className="bi" aria-hidden="true"><use href="#chevron-right"></use></svg>
-        </a>
+        </a></div>
     </div>
     <div className="feature col">
         <div
@@ -29,10 +40,11 @@ function Featuresafety(){
         </div>
         <h3 className="fs-2 text-body-emphasis">Ride Sharing Option</h3>
         <p className="text-left">
-            Share your cab with verified co‑passengers and save more. Reduce traffic and carbon footprint while enjoying a safe, social ride. Smart travel that’s affordable and eco‑friendly.
+            Share your cab with verified co-passengers and save more. Reduce traffic and carbon footprint while enjoying a safe, social ride. Smart travel that's affordable and ec-friendly.
         </p>
+        
         <a href="#" className="icon-link">
-            Discover Offers
+            Discover Offers
             <svg className="bi" aria-hidden="true"><use href="#chevron-right"></use></svg>
         </a>
     </div>
@@ -46,9 +58,10 @@ function Featuresafety(){
         <p className="text-left">
             Know your fare before you book — no hidden charges. Every ride shows clear distance, time, and cost breakdown. Pay confidently with complete transparency.
         </p>
+        <div className="pt-4">
         <a href="#" className="icon-link">
-            Discover Offers
-        </a>
+            Discover Offers
+        </a></div>
     </div>
 
     <div className="feature col">
@@ -57,12 +70,13 @@ function Featuresafety(){
         >
             <i className="fa-brands fa-cc-amazon-pay"></i>
         </div>
-        <h3 className="fs-2 text-body-emphasis">Ride Benefits</h3>
+        <h3 className="fs-2 text-body-emphasis">Ride Benefits</h3>
         <p className="text-left">
-            Experience comfort with clean interiors and air‑conditioned rides. Choose from economy or premium options to match your style. Every trip designed for your convenience.
+            Experience comfort with clean interiors and air-conditioned rides. Choose from economy or premium options to match your style. Every trip designed for your convenience.
         </p>
+
         <a href="#" className="icon-link">
-            Discover Offers
+            Discover Offers
             <svg className="bi" aria-hidden="true"><use href="#chevron-right"></use></svg>
         </a>
     </div>
@@ -75,7 +89,7 @@ function Featuresafety(){
         </div>
         <h3 className="fs-2 text-body-emphasis">Insurance Protection</h3>
         <p className="text-left">
-            Every passenger is covered with ride insurance for peace of mind. In case of emergencies, quick assistance is guaranteed. Safety isn’t optional — it’s built‑in.
+            Every passenger is covered with ride insurance for peace of mind. In case of emergencies, quick assistance is guaranteed. Safety isnt optional — it,s built-in.
         </p>
         <a href="#" className="icon-link">
             Discover Offers
@@ -89,13 +103,14 @@ function Featuresafety(){
             <i className="fa-solid fa-gears"></i>
         </div>
         <h3 className="fs-2 text-body-emphasis">Smart Functions</h3>
-        <p className="text-left">
+        <p className="text-left ">
             Our AI-powered system assigns the best cab instantly. Real-time route optimization saves time and fuel. Technology that makes every ride smoother and smarter.
         </p>
+        <div className="pt-4">
         <a href="#" className="icon-link">
             Discover Offers
             <svg className="bi" aria-hidden="true"><use href="#chevron-right"></use></svg>
-        </a>
+        </a></div>
     </div>
 </div>
 </section>

@@ -17,7 +17,7 @@ function Carouselslide(){
   <div className="carousel-inner ">
     <div className="carousel-item active ">
       <img src={image1} className="d-block w-100 h-400" alt="..."/>
-      <div className="carousel-caption d-none fw-semibold d-md-block ">
+      <div className="carousel-caption d-none fw-semibold d-md-block  ">
         <h5 >Vehicle Safety Inspection</h5>
         <p >Our certified engineers ensure every taxi meets top safety standards before hitting the road.</p>
       </div>
@@ -37,7 +37,9 @@ function Carouselslide(){
         <p>Stay alert at every signal — respect pedestrians and traffic lights. 
     Safe driving keeps our city moving smoothly.</p>
       </div>
+      
     </div>
+    
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span className="carousel-control-prev-icon" aria-hidden="true"></span>

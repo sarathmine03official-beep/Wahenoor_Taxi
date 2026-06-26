@@ -5,8 +5,8 @@ function Carousel(){
         <>
 
 
-        <section className="container-fluid login-page d-flex justify-content-end align-items-center min-vh-100">
-  <div className="login-form text-center p-4 rounded shadow-lg" style={{ maxWidth: "400px", backgroundColor: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
+        <section className="container-fluid login-page d-flex justify-content-end   align-items-center min-vh-100">
+  <div className="login-form text-center p-4 rounded me-8 shadow-lg" style={{ maxWidth: "400px", backgroundColor: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)" }}>
     
     <h2 className="mb-3 text-white">Login</h2>
     <p className="text-white">Have an account?</p>

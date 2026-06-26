@@ -29,14 +29,14 @@ function Header(){
 
         {/* Search Box */}
         <div className="search">
-          <div className="search-box">
-            <div className="search-field d-flex">
+          <div className="search-box ">
+            <div className="search-field d-flex ">
               <input
                 placeholder="Search..."
-                className="form-control"
+                className="form-control "
                 type="text"
               />
-              <button className="btn btn-warning ms-2">
+              <button className="btn btn-warning ms-2 ">
                 <i className="bi bi-search"></i>
               </button>
             </div>

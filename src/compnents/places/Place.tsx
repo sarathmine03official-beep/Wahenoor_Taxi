@@ -20,7 +20,7 @@ function Place(){
 
     return(
         <>
-        <div className="container py-4 ">
+        <div className="container py-5 ">
   <div className="row justify-content-center ">
     
     {/* Buttons Section */}
@@ -42,7 +42,6 @@ function Place(){
     {/* Hover Image Card */}
     {hoverImg && (
       <div className="col-12 col-md-4 text-center  ">
-
           <img
             src={hoverImg}
             alt="preview"

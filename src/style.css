@@ -39,12 +39,12 @@
     /* From Uiverse.io by SteveBloX */ 
 .card-D {
   box-sizing: border-box;
-  width: 300px ;
+  width: 200px ;
   height: 280px !important;
   background: rgba(217, 217, 217, 0.58);
   border: 1px solid white;
-  box-shadow: 12px 5px 5px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(4px);
+  box-shadow: 1px 1px 1px rgba(27, 27, 27, 0.151);
+  backdrop-filter: blur(5px);
   border-radius: 17px;
   /* text-align: center; */
   cursor: pointer;
@@ -58,7 +58,7 @@
 }
 
 .card-D:hover {
-  border: 1px solid rgb(179, 178, 178);
+  border: 2px solid rgb(179, 178, 178);
   transform: scale(1.10);
 }
 
@@ -210,7 +210,7 @@
 .Scene1{
   background: url(./assets/img/paralex/top1.png);
   /* width: 100% !important; */
-  height: 600px !important;
+  height: 800px !important;
   /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
@@ -219,7 +219,7 @@
 .Scene2{
   background: url(./assets/img/paralex/top2.png);
   /* width: 100% !important; */
-  height: 600px !important;
+  height: 800px !important;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -228,7 +228,7 @@
 .Scene3{
   background: url(./assets/img/paralex/top4.png);
   /* width: 100% !important; */
-  height: 600px !important;
+  height: 800px !important;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -237,7 +237,7 @@
 .Scene4{
   background: url(./assets/img/paralex/top3.png);
   /* width: 100% !important; */
-  height: 600px !important;
+  height: 800px !important;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -488,7 +488,7 @@
 .search-box {
   max-width: var(--search-max-width);
   min-width: var(--search-min-width);
-  height: 45px;
+  height: 50px;
   border: 1px solid var(--input-border-color);
   border-radius: var(--border-radius);
   padding: 5px 15px;
@@ -611,7 +611,7 @@
   border: none;
   padding: 10px 20px;
   border-radius: 10px;
-  /* margin-top: 300px; */
+  margin-top: 470px;
   cursor: pointer;
   transition: 0.3s ease;
 }
@@ -623,8 +623,8 @@
 
 .hover-card {
   position: absolute;
-  top: 250px;
-  right: 100%;
+  bottom: 100px;
+  right:10%;
   transform: translateX(-100%);
   background: white;
   /* border-radius: 30px; */
@@ -635,12 +635,14 @@
 
 .hover-image {
   position: absolute;
-  width: 200px;
-  top: 250px;
-  left: 740px;
+  padding: 0 !important;
+  margin: 0 auto;
+  width: 300px;
+  top:-300px;
+  left: 690px;
   transform: translateX(-50%);
 
-  border-radius: 200px;
+  border-radius: 100px;
 }
 
 @keyframes fadeIn {
@@ -687,6 +689,8 @@
   padding: 25px 25px;
   gap: 20px;
 }
+
+
 
 /* for all social containers*/
 .socialContainer {

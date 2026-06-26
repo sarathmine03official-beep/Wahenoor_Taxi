@@ -9,6 +9,7 @@ function Destination(){
         <div className="px-4 py-5 my-4  text-center bg-custom-2 ">
     <img className="d-block mx-auto " src={image1} alt="" width="170" height="" />
     <h1 className=" fw-bold  text-white">Book Your Cab Now</h1>
+    <div className='underline-w'></div>
     <div className="col-lg-6 mx-auto  ">
         <p className="lead mb-3 fw-medium">
             Travel anywhere in the city with comfort and safety.Instant cab booking, live tracking, and verified drivers for every ride.Your journey starts with one click—fast,secure,and affordable.
