@@ -5,8 +5,9 @@ import Footer from "../../compnents/footer/Footer"
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 // import Accordin from "../accordin/Accordin"
 import Featuresafety from "../featuresafety/Featuresafety"
-import Model from "../model/Model"
+// import Model from "../model/Model"
 // import Founder from "../founder/Founder"
+// import plot1 from '../../assets/img/Plot1.png'
 
 
 function About(){
@@ -57,6 +58,10 @@ function About(){
         
         {/* <Accordin/> */}
         <Footer/>
+
+        {/* <img style={{height:"700px", width:"100%"}} src={plot1} alt="imageplot1"/> */}
+
+
         
         </>
     )
